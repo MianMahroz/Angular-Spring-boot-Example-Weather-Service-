@@ -3,8 +3,10 @@
 
 git clone https://github.com/MianMahroz/weather-service.git
 
-cd weather-service
 
+#Backend End Instructions
+
+cd weather-service
 
 cd weather-service-backend
 
@@ -17,7 +19,7 @@ http://localhost:8094/swagger-ui.html#/weather-controller
 
 
 
-
+#Front End Instructions
 
 cd weather-service
 
@@ -28,3 +30,9 @@ npm install
 ng serve
 
 http://localhost:4200/
+
+
+
+#use below property to adjust cache time
+
+spring.cache.caffeine.spec=expireAfterAccess=2h
