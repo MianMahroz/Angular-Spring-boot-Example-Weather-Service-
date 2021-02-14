@@ -4,7 +4,7 @@
 git clone https://github.com/MianMahroz/weather-service.git
 
 cd weather-service
--- backend --
+
 
 cd weather-service-backend
 
@@ -14,7 +14,10 @@ http://localhost:8094
 
 http://localhost:8094/swagger-ui.html#/weather-controller
 
--- Front End
+
+
+
+
 
 cd weather-service
 
