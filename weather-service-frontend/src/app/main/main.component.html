@@ -1,0 +1,23 @@
+<div class="content" role="main">
+
+
+  <!-- Resources -->
+  <h2>Search For Weather</h2>
+  <p>Here are some links to help you get started:</p>
+
+  <div class="card-container">
+    <a class="card" (click)="openDialog('place')">
+      <span>Search By Place</span>
+    </a>
+
+    <a class="card" (click)="openDialog('coordinates')">
+      <span>Search By Coordinates</span>
+    </a>
+
+  </div>
+  <br>
+  <br>
+
+    <app-weather-details  *ngIf="weatherDetails && weatherDetails.cod==200" [weatherDetails]="weatherDetails"></app-weather-details>
+
+</div>

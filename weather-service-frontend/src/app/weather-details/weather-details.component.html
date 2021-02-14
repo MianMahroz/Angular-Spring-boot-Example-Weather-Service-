@@ -1,0 +1,35 @@
+
+  <h2>Weather Details</h2>
+  <p>All Details Are Retrived From Open Weather</p>
+
+
+  <div class="card-container">
+    <mat-selection-list #shoes [multiple]="false">
+      <mat-list-option>
+       Coordinates : {{weatherDetails.coord.lat}},{{weatherDetails.coord.lon}}
+      </mat-list-option>
+
+      <mat-list-option>
+        Weather : {{weatherDetails.weather[0].description}}
+      </mat-list-option>
+
+      <mat-list-option>
+        Temperature : {{weatherDetails.main.temp}}
+      </mat-list-option>
+
+      <mat-list-option>
+        Pressure : {{weatherDetails.main.pressure}}
+      </mat-list-option>
+
+      <mat-list-option>
+        Humidity : {{weatherDetails.main.humidity}}
+      </mat-list-option>
+
+      <mat-list-option>
+        Visibility : {{weatherDetails.visibility}}
+      </mat-list-option>
+
+
+
+    </mat-selection-list>
+</div>
